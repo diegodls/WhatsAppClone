@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".Activity.LoginEmailActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/largura_logo"
+        android:layout_height="@dimen/altura_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etxt_email"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etxt_senha"
+        android:layout_marginTop="273dp"
+        android:ems="10"
+        android:hint="@string/etxt_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColorPrimary"
+        android:textColorLink="@color/textColorPrimary" />
+
+    <EditText
+        android:id="@+id/etxt_senha"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="@string/etxt_senha"
+        android:inputType="textPassword"
+        android:textColor="@color/textColorPrimary"
+        android:textColorLink="@color/textColorPrimary" />
+
+    <Button
+        android:id="@+id/btn_logar"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="216dp"
+        android:text="@string/btn_logar"
+        android:theme="@style/botaoPadrao"/>
+
+    <TextView
+        android:id="@+id/txt_naoTemConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:onClick="abrirCadastroUsuarario"
+        android:text="@string/txt_naoTemConta"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:onClick="abrirClasseTeste"
+        android:text="Teste"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
